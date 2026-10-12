@@ -1,0 +1,36 @@
+545 bowl games, 28 features, seasons 2005-2020
+  fold 2005 done (6s)
+  fold 2006 done (13s)
+  fold 2007 done (18s)
+  fold 2008 done (24s)
+  fold 2009 done (30s)
+  fold 2010 done (36s)
+  fold 2011 done (42s)
+  fold 2012 done (48s)
+  fold 2013 done (54s)
+  fold 2014 done (60s)
+  fold 2015 done (65s)
+  fold 2016 done (71s)
+  fold 2017 done (77s)
+  fold 2018 done (83s)
+  fold 2019 done (89s)
+  fold 2020 done (95s)
+                       model  accuracy  acc_se  pickem_pct_of_max  margin_RMSE  margin_MAE
+        Baseline: higher Elo     0.582   0.021              0.617          NaN         NaN
+      Baseline: higher win %     0.532   0.021              0.537          NaN         NaN
+     Linear regression (all)     0.611   0.021              0.634       17.148      13.471
+                       Ridge     0.629   0.021              0.646       17.049      13.239
+                       Lasso     0.622   0.021              0.657       16.919      13.147
+         Logistic regression     0.604   0.021              0.628          NaN         NaN
+               Random forest     0.611   0.021              0.638       17.028      13.248
+           Gradient boosting     0.587   0.021              0.633       17.048      13.310
+      Ensemble (Ridge+RF+GB)     0.611   0.021              0.640       17.006      13.222
+     Ridge: scoring/Elo only     0.631   0.021              0.675       16.686      12.929
+Ridge: efficiency stats only     0.578   0.021              0.615       17.305      13.441
+       Coin flip (reference)     0.500   0.021              0.500       17.716      13.817
+Ridge                      vs Elo: model-only-correct= 79  elo-only-correct= 53  two-sided p=0.029
+Lasso                      vs Elo: model-only-correct= 71  elo-only-correct= 49  two-sided p=0.055
+Logistic regression        vs Elo: model-only-correct= 84  elo-only-correct= 72  two-sided p=0.379
+Random forest              vs Elo: model-only-correct= 75  elo-only-correct= 59  two-sided p=0.195
+Ensemble (Ridge+RF+GB)     vs Elo: model-only-correct= 72  elo-only-correct= 56  two-sided p=0.185
+best model by pick'em: Ridge | total 101s

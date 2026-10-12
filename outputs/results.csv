@@ -1,0 +1,13 @@
+model,accuracy,acc_se,pickem_pct_of_max,margin_RMSE,margin_MAE
+Baseline: higher Elo,0.5817,0.0211,0.6172,,
+Baseline: higher win %,0.5321,0.0214,0.5368,,
+Linear regression (all),0.611,0.0209,0.6345,17.1479,13.4713
+Ridge,0.6294,0.0207,0.646,17.0493,13.2391
+Lasso,0.622,0.0208,0.6571,16.9186,13.1471
+Logistic regression,0.6037,0.021,0.6278,,
+Random forest,0.611,0.0209,0.6378,17.0283,13.2478
+Gradient boosting,0.5872,0.0211,0.6332,17.048,13.3101
+Ensemble (Ridge+RF+GB),0.611,0.0209,0.6405,17.0057,13.2221
+Ridge: scoring/Elo only,0.6312,0.0207,0.6755,16.6863,12.9292
+Ridge: efficiency stats only,0.578,0.0212,0.6145,17.3053,13.4407
+Coin flip (reference),0.5,0.0214,0.5,17.7159,13.8165

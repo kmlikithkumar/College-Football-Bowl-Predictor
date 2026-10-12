@@ -1,0 +1,5 @@
+Ridge                      vs Elo: model-only-correct= 79  elo-only-correct= 53  two-sided p=0.029
+Lasso                      vs Elo: model-only-correct= 71  elo-only-correct= 49  two-sided p=0.055
+Logistic regression        vs Elo: model-only-correct= 84  elo-only-correct= 72  two-sided p=0.379
+Random forest              vs Elo: model-only-correct= 75  elo-only-correct= 59  two-sided p=0.195
+Ensemble (Ridge+RF+GB)     vs Elo: model-only-correct= 72  elo-only-correct= 56  two-sided p=0.185
